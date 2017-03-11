@@ -1,0 +1,25 @@
+.image-section{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    .image-section-link{
+        z-index: 500;
+        flex-grow: 1;
+        width: 33%;
+        height: 20em;
+        position: relative;
+
+        .image-container{
+            position: absolute;
+            top: 0; bottom: 0; left: 0; right: 0;
+            background-size: cover;
+            background-position: center center;
+            transition: 0.33s height ease-in-out;
+
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+}
